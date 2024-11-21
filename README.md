@@ -14,4 +14,5 @@ Code of  "A scalable practice for deep-sea metagenomic research reveals unreport
     Used to translate annotation results into the format required by the visualization software
 
 - data
+
     data used for Statistical analysis and figure plotting
