@@ -1,0 +1,100 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+load packages
+```{r}
+library(ggplot2)
+library(corrplot)
+library(vegan)
+library(dplyr)
+library(multcompView)
+library(ComplexHeatmap)
+```
+
+Fig 1. Experiment 
+```{r}
+experiment <- data.frame(readr::read_tsv("ExperimentPart.txt",col_names = TRUE))
+profile <- data.frame(readr::read_tsv("all.profile",col_names = TRUE))
+
+anova <- aov(nmds2~Extract,data=experiment[which(experiment$type == "Water"),])
+TukeyHSD(anova) %>% multcompLetters4(anova,.)
+
+
+lmm<-lm(experiment$QC ~ experiment$Extract + experiment$sample + experiment$sample * experiment$Extract)
+anova(lmm)
+summary(lmm)
+
+ggplot(experiment, aes(x = Total.length.1000, y = Extract_Library_Input, group=Extract_Library_Input)) +geom_boxplot(aes(x = Total.length.1000, y = Extract_Library_Input,color=Library_Input), show.legend = F, width = 0.7,size=0.8) +facet_grid(type~.,scales="free_y",space = "free_y"  )+theme(panel.grid = element_blank(),panel.background = element_blank(),axis.line = element_line(colour = 'black', size = 0.5))+scale_color_manual(values = c("#ef476f","#ffd166","#06d6a0","#118ab2","#01497c"))+labs(y = "Experiment method")
+ggplot(experiment, aes(x = KMC, y = Extract_Library_Input, group=Extract_Library_Input)) +geom_boxplot(aes(x = KMC, y = Extract_Library_Input,color=Library_Input), show.legend = F, width = 0.7,size=0.8) +facet_grid(type~.,scales="free_y",space = "free_y"  )+theme(panel.grid = element_blank(),panel.background = element_blank(),axis.line = element_line(colour = 'black', size = 0.5))+scale_color_manual(values = c("#ef476f","#ffd166","#06d6a0","#118ab2","#01497c"))+labs(y = "Experiment method")
+ggplot(experiment, aes(x = N50, y = Extract_Library_Input, group=Extract_Library_Input)) +geom_boxplot(aes(x = N50, y = Extract_Library_Input,color=Library_Input), show.legend = F, width = 0.7,size=0.8) +facet_grid(type~.,scales="free_y",space = "free_y"  )+theme(panel.grid = element_blank(),panel.background = element_blank(),axis.line = element_line(colour = 'black', size = 0.5))+scale_color_manual(values = c("#ef476f","#ffd166","#06d6a0","#118ab2","#01497c"))+labs(y = "Experiment method")
+ggplot(experiment, aes(x = Largest.contig, y = Extract_Library_Input, group=Extract_Library_Input)) +geom_boxplot(aes(x = Largest.contig, y = Extract_Library_Input,color=Library_Input), show.legend = F, width = 0.7,size=0.8) +facet_grid(type~.,scales="free_y",space = "free_y"  )+theme(panel.grid = element_blank(),panel.background = element_blank(),axis.line = element_line(colour = 'black', size = 0.5))+scale_color_manual(values = c("#ef476f","#ffd166","#06d6a0","#118ab2","#01497c"))+labs(y = "Experiment method")
+ggplot(experiment, aes(x = QC, y = Extract_Library_Input, group=Extract_Library_Input)) +geom_boxplot(aes(x = QC, y = Extract_Library_Input,color=Library_Input), show.legend = F, width = 0.7,size=0.8) +facet_grid(type~.,scales="free_y",space = "free_y"  )+theme(panel.grid = element_blank(),panel.background = element_blank(),axis.line = element_line(colour = 'black', size = 0.5))+scale_color_manual(values = c("#ef476f","#ffd166","#06d6a0","#118ab2","#01497c"))+labs(y = "Experiment method")
+ggplot(experiment, aes(x = nmds1, y = Extract, group=Extract))+geom_boxplot(aes(x = nmds1, y = Extract), show.legend = F, width = 0.7,size=0.8)+facet_grid(type~.,scales="free_y",space = "free_y"  )+theme(panel.grid = element_blank(),panel.background = element_blank(),axis.line = element_line(colour = 'black', size = 0.5))+scale_color_manual(values = c("#ef476f","#ffd166","#06d6a0","#118ab2","#01497c"))+labs(y = "Experiment method")
+ggplot(experiment, aes(x = nmds2, y = Extract, group=Extract))+geom_boxplot(aes(x = nmds2, y = Extract), show.legend = F, width = 0.7,size=0.8)+facet_grid(type~.,scales="free_y",space = "free_y"  )+theme(panel.grid = element_blank(),panel.background = element_blank(),axis.line = element_line(colour = 'black', size = 0.5))+scale_color_manual(values = c("#ef476f","#ffd166","#06d6a0","#118ab2","#01497c"))+labs(y = "Experiment method")
+
+
+
+```
+Fig2. profiling
+```{r}
+#change input file to get results in other habitat
+meer.mp4 <- data.frame(readr::read_csv("meer.mp4.genus.txt",col_names = TRUE))
+meer.dist.mp4<-dist(t(as.matrix(meer.mp4[,-1])))
+meer.mp3 <- data.frame(readr::read_tsv("meer.mp3.genus.txt",col_names = TRUE))
+meer.dist.mp3<-dist(as.matrix(meer.mp3[,-1]))
+mantel(meer.dist.mp4, meer.dist.mp3)
+
+#mantel test result as input
+cor1<- data.frame(readr::read_tsv("cor1.txt",col_names = TRUE))
+rownames(cor1)<-cor1$...1
+cor1<-cor1[,-1]
+corrplot(as.matrix(cor1),method = "color",type = "lower")
+
+ggplot(experiment[which(experiment$type=="Coldseep"),]) +
+geom_boxplot(aes(y="MetaPhaln3",x = annotation_MP3,fill="1"), show.legend = F, width = 0.8)+geom_boxplot(aes(y="MetaPhaln4",x = annotation_MP4,fill="2"), show.legend = F, width = 0.8)+geom_boxplot(aes(y="Kraken2",x = annotation_kraken2,fill="3"), show.legend = F, width = 0.8)+labs(x = 'Cold seep', y = 'Anotation rate')+xlim(0,40)+
+theme(panel.grid = element_blank(),
+axis.line = element_line(colour = 'black', size = 1),
+panel.background = element_blank())+scale_fill_manual(values = c("#FF9966","#996600","#CCCC00","#799eb2","#b1d4e5"))
+
+ggplot(experiment[which(experiment$type=="Water"),]) +
+geom_boxplot(aes(y="MetaPhaln3",x = annotation_MP3,fill="1"), show.legend = F, width = 0.8)+geom_boxplot(aes(y="MetaPhaln4",x = annotation_MP4,fill="2"), show.legend = F, width = 0.8)+geom_boxplot(aes(y="Kraken2",x = annotation_kraken2,fill="3"), show.legend = F, width = 0.8)+labs(x = 'Cold seep', y = 'Anotation rate')+xlim(0,40)+
+theme(panel.grid = element_blank(),
+axis.line = element_line(colour = 'black', size = 1),
+panel.background = element_blank())+scale_fill_manual(values = c("#FF9966","#996600","#CCCC00","#799eb2","#b1d4e5"))
+ggplot(experiment[which(experiment$type=="Trench"),]) +
+geom_boxplot(aes(y="MetaPhaln3",x = annotation_MP3,fill="1"), show.legend = F, width = 0.8)+geom_boxplot(aes(y="MetaPhaln4",x = annotation_MP4,fill="2"), show.legend = F, width = 0.8)+geom_boxplot(aes(y="Kraken2",x = annotation_kraken2,fill="3"), show.legend = F, width = 0.8)+labs(x = 'Cold seep', y = 'Anotation rate')+xlim(0,40)+
+theme(panel.grid = element_blank(),
+axis.line = element_line(colour = 'black', size = 1),
+panel.background = element_blank())+scale_fill_manual(values = c("#FF9966","#996600","#CCCC00","#799eb2","#b1d4e5"))
+```
+
+Fig 3. Binning 
+```{r}
+binning <- data.frame(readr::read_tsv("all.binning.txt",col_names = TRUE))
+
+ggplot(profile[which(profile$tag=="uniq"),],aes(y = value, x = pipeline, group=pipeline))+geom_violin(aes(fill=pipeline), show.legend = F, width = 0.7,size=0.8)+geom_jitter(size=0.7)+facet_grid(.~type,scales="free_y",space = "free_y"  )+theme(panel.grid = element_blank(),axis.line = element_line(colour = 'black', size = 0.5),panel.background = element_blank())+scale_fill_manual(values = c("#e66f51","#ae63e4","#eac46b","#2b9d8e","#01497c"))+ylab("Relative abundance")
+ggplot(binning[which(binning$tag=="all"),],aes(y = contigs, x = pipeline, group=pipeline)) +geom_violin(aes(fill=pipeline), show.legend = F, width = 0.7,size=0.8) +geom_jitter(size=0.8)+facet_grid(.~type,scales="free_y",space = "free_y"  )+theme(panel.grid = element_blank(),axis.line = element_line(colour = 'black', size = 0.5),panel.background = element_blank())+scale_fill_manual(values = c("#e66f51","#ae63e4","#eac46b","#2b9d8e","#01497c"))
+ggplot(binning,aes(x = completeness, y = pipeline, group=pipeline)) +geom_boxplot(aes(x = completeness, y = pipeline,fill=pipeline), show.legend = F, width = 0.7,size=0.8) +facet_grid(type~.,scales="free_y",space = "free_y"  )+theme(panel.grid = element_blank(),axis.line = element_line(colour = 'black', size = 0.5),panel.background = element_blank())+scale_fill_manual(values = c("#e66f51","#ae63e4","#eac46b","#2b9d8e","#01497c"))+labs(y = "Experiment method")
+ggplot(binning,aes(x = contamination, y = pipeline, group=pipeline)) +geom_boxplot(aes(x = contamination, y = pipeline,fill=pipeline), show.legend = F, width = 0.7,size=0.8) +facet_grid(type~.,scales="free_y",space = "free_y"  )+theme(panel.grid = element_blank(),axis.line = element_line(colour = 'black', size = 0.5),panel.background = element_blank())+scale_fill_manual(values = c("#e66f51","#ae63e4","#eac46b","#2b9d8e","#01497c"))+labs(y = "Experiment method")
+ggplot(binning,aes(y = pipeline, group=pipeline)) +geom_bar(aes(y = pipeline,fill=pipeline), show.legend = F, width = 0.7,size=0.8) +facet_grid(type~.,scales="free_y",space = "free_y"  )+theme(panel.grid = element_blank(),axis.line = element_line(colour = 'black', size = 0.5),panel.background = element_blank())+scale_fill_manual(values = c("#e66f51","#ae63e4","#eac46b","#2b9d8e","#01497c"))+labs(y = "Experiment method")
+```
+
+Fig 4. Evolution & Function 
+```{r}
+ani<- data.frame(readr::read_tsv("ani.txt",col_names = TRUE))
+ggplot(ani,aes(x = group, y = ani, group=group)) +geom_boxplot(aes(fill=group), show.legend = F, width = 0.7,size=0.8) +theme(panel.grid = element_blank(),axis.line = element_line(colour = 'black', size = 0.5),panel.background = element_blank())+scale_fill_manual(values = c("#e06d61","#d39966","#598876","#4c5072","#367ba5","#ffa99c"))
+target.profile<- data.frame(readr::read_tsv("target.fpkm.MAG.profile",col_names = TRUE))
+rownames(target.profile)<-target.profile$OTU
+target.profile<-target.profile[,-1]
+Heatmap(target.profile, column_split = factor(sub("^(.*?)_.*$", "\\1", colnames(target.profile)),levels=c("Trench","Coldseep","Water")),row_split = factor(sub("^(.*?)_.*$", "\\1", rownames(target.profile)),levels=c("Trench","Coldseep","Water")),col = c('#eeeeee','#36c9c6'),row_dend_width = unit(2, "cm"),column_dend_height  = unit(2, "cm"))
+
+
+metabolic.hmm.final<- data.frame(readr::read_tsv("metabolic.hmm.txt",col_names = TRUE))
+rownames(metabolic.hmm.final)<-metabolic.hmm.final$mag
+metabolic.hmm.final<-metabolic.hmm.final[,-1]
+Heatmap(metabolic.hmm.final, column_split = sub("^(.*?)_.*$", "\\1", colnames(metabolic.hmm.final)),row_split = sub("^(.*?)_.*$", "\\1", rownames(metabolic.hmm.final)),col = c('#f8f8f8','#36c9c6'),row_dend_width = unit(2, "cm"),column_dend_height  = unit(2, "cm"))
+
+```
+

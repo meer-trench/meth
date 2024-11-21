@@ -1,0 +1,120 @@
+mag	meer_FDZ070.GBkY24.26AP1.3104	meer_bin.33	meer_metawrap_FDZ070.GBkY0.2AP1_bin.16	meer_metawrap_FDZ070.GBkY16.18AP1_bin.34	meer_metawrap_FDZ070.GBkY24.26AP1_bin.37	meer_metawrap_FDZ070.GBkY28.30AP1_bin.2	meer_metawrap_FDZ070.GBkY28.30AP1_bin.55	meth_CS01_Fast_PCR_1.11265	meth_CS01_Fast_PCR_1.13885	meth_CS01_Fast_PCR_1.9487	meth_CS12_Fast_PCR_1.4954	meth_metawrap_CS01_Fast_PCR_1_bin.2	water_MT07_Fast_enzy_PCR.5468	water_MT07_Fast_enzy_PCR.5600	water_MT08_Fast_enzy_PCR.14590	water_MT08_Fast_enzy_PCR.8250	water_metabat2_MT01_Fast_enzy_PCR_bin.35	water_metawrap_MT05_Fast_enzy_PCR_bin.42	water_metawrap_MT06_Fast_enzy_PCR_bin.43	water_metawrap_MT08_Fast_enzy_PCR_bin.13	water_metawrap_MT08_Fast_enzy_PCR_bin.45	water_metawrap_MT08_Fast_enzy_PCR_bin.9
+Complex carbon degradation_Hemicullulose debranching_arabinosidase	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	3	0	1	3	0	3	3
+Complex carbon degradation_Cellulose degrading_beta-glucosidase	0	0	0	0	0	0	0	1	0	2	1	1	0	1	1	2	0	3	3	0	3	3
+Complex carbon degradation_Other oligosaccharide degrading_beta-galactosidase	0	2	0	0	0	0	0	2	0	3	2	0	0	0	0	0	0	0	1	0	3	3
+Complex carbon degradation_Chitin degrading_hexosaminidase	0	1	3	2	1	1	1	1	1	3	3	2	1	3	1	3	1	2	3	1	3	3
+Fatty acid degradation_Fatty acid degradation_acyl-CoA dehydrogenase	3	3	3	3	3	3	3	3	1	1	0	1	3	3	3	2	2	2	3	3	3	2
+Sulfur cycling enzymes (detailed)_Sulfur-related amino acid metabolism | SAMe (S-adenosyl-L-methionine) -> SAH (S-adenosyl-L-homocysteine)_dcm	1	1	1	2	0	3	1	0	0	0	1	0	0	0	1	1	0	0	2	0	0	0
+Iron cycling_Iron reduction_Ndh2	0	0	1	1	0	0	0	1	0	0	0	0	2	3	1	2	0	1	3	1	2	1
+Sulfur cycling enzymes (detailed)_Metabolism of organic sulfur | Homocysteine -> Methionine_metH	2	1	2	1	2	1	1	1	0	1	1	1	2	2	2	2	0	2	2	1	3	0
+Iron cycling_Iron reduction_DmkB	2	2	1	2	1	2	2	3	2	2	1	1	2	2	2	2	2	2	2	2	2	2
+Amino acid utilization_Histidinol-phosphate/aromatic aminotransferase_histidinol-phosphate/aromatic aminotransferase	1	1	0	1	0	1	0	0	0	2	1	0	0	0	1	2	0	0	3	0	1	2
+Iron cycling_Iron reduction_FmnB	1	2	0	1	1	1	1	1	0	0	0	1	1	1	2	3	1	1	3	1	2	2
+Sulfur cycling enzymes (detailed)_Sulfur-related amino acid metabolism | Methionine -> Methanethiol_megL	1	3	2	1	0	2	1	2	1	1	0	0	2	1	3	2	1	1	2	1	3	1
+Complex carbon degradation_Endohemicellulases_mannan endo-1,4-beta-mannosidase	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	0
+Iron cycling_Iron reduction_DFE_0461	0	0	0	0	0	2	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0
+Iron cycling_Iron reduction_DFE_0462	0	0	0	0	0	2	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	0
+Complex carbon degradation_Other oligosaccharide degrading_beta-xylosidase	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	1	1	0	3	3
+Complex carbon degradation_Amylolytic enzymes_alpha-amylase	0	0	0	0	0	3	0	2	1	1	1	1	0	0	0	1	0	2	1	0	0	2
+As cycling_Arsenate reduction for detoxification_arsC (grx)	2	0	1	1	1	0	0	1	0	1	0	0	1	1	1	1	1	0	1	1	1	1
+Amino acid utilization_Branched-chain amino acid aminotransferase/4-amino-4-deoxychorismate lyase_branched-chain amino acid aminotransferase/4-amino-4-deoxychorismate lyase	2	1	1	1	1	1	1	1	1	1	0	2	1	1	2	1	1	1	0	1	2	1
+Oxidative phosphorylation_Complex II (Succinate dehydrogenase/Fumarate reductase)_sdhC	1	1	1	1	0	1	0	1	0	1	1	0	0	1	1	0	1	1	1	0	2	1
+Amino acid utilization_Ornithine/acetylornithine aminotransferase_ornithine/acetylornithine aminotransferase	1	1	1	1	0	1	1	1	1	1	2	0	1	1	1	1	1	0	1	0	1	1
+Sulfur cycling enzymes (detailed)_DMSO metabolism | DMS (Dimethyl sulfide) <-> Methanethiol_dmoB	1	0	1	1	1	1	1	1	1	1	2	0	1	1	1	0	1	0	1	1	2	2
+Fermentation_Acetogenesis_pta	1	2	1	0	1	2	1	0	1	1	1	2	0	1	0	1	1	1	1	1	2	1
+Perchlorate reduction_Perchlorate reduction_pcrA	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Iron cycling_Iron reduction_DFE_0449	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Nitrogen cycling_Nitrate reduction_narG	0	0	0	0	1	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Nitrogen cycling_Nitrate reduction_narH	0	0	0	0	1	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Nitrogen cycling_Nitrite reduction to ammonia_nrfA	0	0	0	0	0	0	0	0	2	1	0	0	0	0	0	0	0	0	0	0	0	0
+Hydrogenases_FeFe hydrogenase_fefe-group-a13	0	0	0	0	0	0	0	0	2	1	0	0	0	0	0	0	0	0	0	0	0	0
+Hydrogenases_FeFe hydrogenase_fefe-group-c3	0	0	0	0	0	0	0	0	1	2	0	0	0	0	0	0	0	0	0	0	0	0
+Iron cycling_Iron reduction_DFE_0448	0	0	0	0	0	2	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
+Iron cycling_Iron oxidation_Cyc2_repCluster2	0	2	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Iron cycling_Iron oxidation_Cyc2_repCluster3	0	2	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Fermentation_Acetogenesis_acdA	0	0	0	0	0	0	1	2	0	1	1	0	0	0	0	0	0	0	0	0	0	0
+Sulfur cycling enzymes (detailed)_DMSO metabolism | DMSO (Dimethyl sulfoxide) <-> DMS (Dimethyl sulfide)_ddhA	0	0	0	1	1	0	2	0	0	1	0	0	0	2	0	0	0	0	0	0	0	0
+Sulfur cycling_Sulfide oxidation_sqr	0	0	0	0	0	0	0	1	0	0	1	0	1	0	2	1	0	0	2	0	0	0
+Sulfur cycling enzymes (detailed)_Dissimilatory sulfur metabolism | Sulfide oxidation_sqr	0	0	0	0	0	0	0	1	0	0	1	0	1	0	2	1	0	0	2	0	0	0
+Complex carbon degradation_Hemicullulose debranching_alpha-L-rhamnosidase	0	1	0	0	0	1	0	0	1	2	0	0	0	0	0	1	1	0	1	1	0	0
+Fermentation_Acetogenesis_ack	0	1	0	0	0	1	1	2	1	1	1	1	0	0	0	0	0	0	0	0	1	0
+Sulfur cycling enzymes (detailed)_Assimilatory sulfur metabolism| PAPS (3'-Phosphoadenosine 5'-phosphosulfate) <-> Sulfite_cysH	0	1	0	0	2	0	1	1	1	1	0	0	0	0	1	0	0	1	0	1	0	0
+Sulfur cycling_Sulfur oxidation_sdo	0	0	1	0	0	0	0	1	0	0	0	0	1	1	0	1	1	2	1	0	0	2
+Oxygen metabolism (Oxidative phosphorylation Complex IV)_Oxygen metabolism - cytochrome c oxidase, cbb3-type_ccoN	0	0	1	0	0	1	0	1	0	0	0	0	1	0	1	1	0	2	1	0	1	1
+Sulfur cycling enzymes (detailed)_Dissimilatory sulfur metabolism | Sulfur oxidation_sdo	0	0	1	0	0	0	0	1	0	0	0	0	1	1	0	1	1	2	1	0	0	2
+Fermentation_Acetate to acetyl-CoA_acs	0	0	1	1	1	0	1	2	0	0	0	0	1	0	1	0	1	0	1	0	1	1
+Oxygen metabolism (Oxidative phosphorylation Complex IV)_Oxygen metabolism - cytochrome c oxidase, cbb3-type_ccoO	0	0	1	0	0	2	0	1	0	0	0	0	1	0	1	1	0	2	1	0	1	1
+Sulfur cycling enzymes (detailed)_Metabolism of organic sulfur | Cysteine <-> Cystathionine_metB	0	1	0	1	0	1	0	0	0	0	0	0	2	1	1	1	1	1	1	1	1	1
+Oxidative phosphorylation_Complex V (F-type H-transporting ATPase)_atpD (F-type)	0	1	1	0	1	1	1	1	1	1	0	0	1	1	1	1	1	1	1	0	2	1
+Sulfur cycling enzymes (detailed)_Sulfur-related amino acid metabolism | Methionine -> SAMe (S-adenosyl-L-methionine)_metK	0	0	0	2	1	1	1	1	0	1	0	0	1	1	1	1	2	1	1	0	1	2
+Sulfur cycling enzymes (detailed)_Metabolism of organic sulfur | Cystathionine -> Homocysteine_metC	0	2	0	1	0	2	1	2	0	0	0	0	2	1	1	1	1	1	1	1	1	1
+Sulfur cycling enzymes (detailed)_Sulfur-related amino acid metabolism | Cysteine -> Sulfide_metC	0	2	0	1	0	2	1	2	0	0	0	0	2	1	1	1	1	1	1	1	1	1
+Sulfur cycling enzymes (detailed)_Assimilatory sulfur metabolism| Sulfide -> Cysteine_cysM	1	0	1	1	0	0	0	0	0	0	0	0	0	0	0	1	0	0	1	0	0	1
+Sulfur cycling enzymes (detailed)_Sulfur-related amino acid metabolism | Cysteine -> Sulfide_cysM	1	0	1	1	0	0	0	0	0	0	0	0	0	0	0	1	0	0	1	0	0	1
+Amino acid utilization_Aspartate/tyrosine/aromatic aminotransferase_aspartate/tyrosine/aromatic aminotransferase	1	0	1	0	1	0	1	1	1	0	0	0	1	1	1	1	0	0	1	0	1	1
+Sulfur cycling enzymes (detailed)_Metabolism of organic sulfur | Cysteine <-> 3-mercaptopyruvate_aspB	1	0	1	0	1	0	1	1	1	0	0	0	1	1	1	1	0	0	1	0	1	1
+Sulfur cycling enzymes (detailed)_Assimilatory sulfur metabolism| Sulfate <-> APS (Adenosine 5'-phosphosulfate)_cysD	1	1	0	1	1	0	1	1	1	0	0	1	1	1	1	1	1	1	1	0	0	0
+Sulfur cycling enzymes (detailed)_Assimilatory sulfur metabolism| Sulfate <-> APS (Adenosine 5'-phosphosulfate)_cysN	1	1	0	1	1	0	1	1	1	0	0	1	1	1	1	1	1	1	1	1	0	0
+Sulfur cycling enzymes (detailed)_Metabolism of organic sulfur | SAH (S-adenosyl-L-homocysteine) -> Homocysteine_ahcY	1	1	1	1	1	1	1	1	1	1	1	0	1	1	1	1	1	1	1	0	1	1
+Amino acid utilization_4-aminobutyrate aminotransferase and related aminotransferases_4-aminobutyrate aminotransferase and related aminotransferases	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0
+Amino acid utilization_Aminotransferase class I and II_aminotransferase class I and II	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
+Complex carbon degradation_Cellulose degrading_cellulase	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0
+Complex carbon degradation_Hemicullulose debranching_beta-glucuronidase	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0
+Complex carbon degradation_Endohemicellulases_alpha-D-xyloside xylohydrolase	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0
+C1 metabolism_Formate oxidation_fdoG	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0
+C1 metabolism_Formate oxidation_fdoH	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0
+C1 metabolism_Aerobic CO oxidation_coxS	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Methane metabolism_Methane oxidation - Soluble methane monoxygenase_mmoB	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Nitrogen cycling_Nitrate reduction_napA	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Nitrogen cycling_Nitrate reduction_napB	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Nitrogen cycling_Nitrite reduction to ammonia_nrfH	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
+Nitrogen cycling_Nitric oxide reduction_norB	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
+Hydrogenases_FeFe hydrogenase_fefe-group-c1	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0
+Hydrogenases_Ni-Fe Hydrogenase_nife-group-1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
+Hydrogenases_Ni-Fe Hydrogenase_nife-group-3abd	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Hydrogenases_Ni-Fe Hydrogenase_nife-group-3c	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Oxidative phosphorylation_Complex III (Cytochrome c reductase)_petB	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Oxygen metabolism (Oxidative phosphorylation Complex IV)_Oxygen metabolism - cytochrome c oxidase, caa3-type_coxB	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0
+Halogenated compound utilization_Halogenated compounds breakdown_E3.8.1.2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0
+Iron cycling_Iron oxidation_Cyc2_repCluster1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Iron cycling_Iron reduction_DmkA	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Iron cycling_Iron reduction_DFE_0451	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0
+Iron cycling_Iron reduction_DFE_0463	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0
+Iron cycling_Iron reduction_DFE_0465	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0
+Sulfur cycling enzymes (detailed)_DMSO metabolism | DMS (Dimethyl sulfide) <-> Methanethiol_mddA	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sulfur cycling enzymes (detailed)_Metabolism of organic sulfur | SAH (S-adenosyl-L-homocysteine) -> SRH (S-ribosylhomocysteine)_mtnN	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0
+Aromatics degradation_Benzoyl-CoA reduction_bcrC	0	0	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Aromatics degradation_Benzoyl-CoA reduction_bcrB	0	0	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Complex carbon degradation_Chitin degrading_chitiniase	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1
+Nitrogen cycling_Nitrite reduction_octR	0	0	0	0	0	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0
+Sulfur cycling_Sulfate reduction_aprA	0	0	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0
+Sulfur cycling_Thiosulfate disproportionation_phsA	0	0	0	0	0	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0
+Oxygen metabolism (Oxidative phosphorylation Complex IV)_Oxygen metabolism - cytochrome c oxidase, caa3-type_coxA	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0
+Selenate reduction_Selenate reduction_YgfK	0	0	0	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sulfur cycling enzymes (detailed)_Dissimilatory sulfur metabolism | Thiosulfate oxidation_soxX	0	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sulfur cycling enzymes (detailed)_Dissimilatory sulfur metabolism | Sulfate reduction_aprA	0	0	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0
+Sulfur cycling enzymes (detailed)_Dissimilatory sulfur metabolism | Thiosulfate disproportionation_phsA	0	0	0	0	0	0	0	1	0	1	0	0	0	0	0	0	0	0	0	0	0	0
+Sulfur cycling enzymes (detailed)_Assimilatory sulfur metabolism| Sulfate <-> APS (Adenosine 5'-phosphosulfate)_cysNC	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sulfur cycling enzymes (detailed)_Assimilatory sulfur metabolism| APS (Adenosine 5'-phosphosulfate) <-> PAPS (3'-Phosphoadenosine 5'-phosphosulfate)_cysNC	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Sulfur cycling enzymes (detailed)_Metabolism of organic sulfur | Homocysteine <-> Methionine_metE	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	1	0
+Ethanol fermentation_Acetaldehyde => Ethanol_acetaldehyde => ethanol	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	1	1
+Oxidative phosphorylation_Complex I (NADH-quinone oxidoreductase)_nuoB	0	0	1	1	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0
+Sulfur cycling enzymes (detailed)_Dissimilatory sulfur metabolism | Sulfate reduction_aprB	0	1	0	0	0	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0
+Aromatics degradation_Phenol => Benzoyl-CoA_ubiX	0	1	0	0	1	1	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0
+Complex carbon degradation_Other oligosaccharide degrading_beta-mannosidase	0	0	1	0	0	0	0	1	0	1	0	0	0	0	0	0	0	1	0	0	0	0
+Nitrogen cycling_Nitrite reduction_nirK	0	0	1	1	0	0	0	0	0	0	0	0	1	0	0	1	0	0	0	0	0	0
+Nitrogen cycling_Nitrous oxide reduction_nosZ	0	0	0	0	0	1	0	1	0	0	0	0	1	0	0	0	0	0	1	0	0	0
+Oxidative phosphorylation_Complex I (NADH-quinone oxidoreductase)_nuoA	0	0	1	1	0	0	0	0	0	0	0	0	0	1	0	0	0	1	0	0	0	0
+As cycling_Arsenite methylation_arsM	0	0	0	0	0	0	1	1	0	0	0	1	1	0	0	0	0	0	0	0	0	0
+Sulfur cycling enzymes (detailed)_Assimilatory sulfur metabolism| Sulfide -> Cysteine_cysK	0	1	0	0	0	0	0	0	0	1	1	0	0	0	1	0	0	0	0	0	0	0
+Sulfur cycling enzymes (detailed)_Sulfur-related amino acid metabolism | Cysteine -> Sulfide_cysK	0	1	0	0	0	0	0	0	0	1	1	0	0	0	1	0	0	0	0	0	0	0
+Ethanol fermentation_Acetate => Acetaldehyde_acetate => acetaldehyde	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	1	0	1	1
+Nitrogen cycling_Nitric oxide reduction_norC	0	1	0	0	1	1	0	0	0	0	0	0	1	0	0	0	0	0	0	1	0	0
+Sulfur cycling enzymes (detailed)_Metabolism of organic sulfur | Cystathionine -> Homocysteine_malY	0	0	0	0	0	0	1	1	1	1	0	1	0	0	0	0	0	0	0	0	0	0
+Sulfur cycling enzymes (detailed)_Sulfur-related amino acid metabolism | Cysteine -> Sulfide_malY	0	0	0	0	0	0	1	1	1	1	0	1	0	0	0	0	0	0	0	0	0	0
+Oxygen metabolism (Oxidative phosphorylation Complex IV)_Oxygen metabolism - cytochrome (quinone) oxidase, bd type_cydB	0	0	0	0	0	0	0	1	1	1	0	0	1	0	1	1	0	0	1	0	0	0
+Sulfur cycling enzymes (detailed)_Metabolism of organic sulfur | OAHS (O-acetylhomoserine)  Sulfide -> Homocysteine_metY	0	1	0	0	0	0	0	0	1	1	1	0	0	0	1	0	1	0	0	0	1	0
+Oxygen metabolism (Oxidative phosphorylation Complex IV)_Oxygen metabolism - cytochrome (quinone) oxidase, bd type_cydA	0	0	0	0	0	0	0	1	1	1	0	1	1	0	1	1	0	0	1	0	1	1
+Oxygen metabolism (Oxidative phosphorylation Complex IV)_Oxygen metabolism - cytochrome c oxidase, cbb3-type_ccoP	0	0	1	0	0	1	0	1	0	1	0	1	1	0	1	1	0	1	1	0	1	1
+Sulfur cycling enzymes (detailed)_Metabolism of organic sulfur | MHO (L-methionine (R)-S-oxide) -> Methionine)_msrC	0	0	1	1	1	0	1	1	0	1	0	0	1	1	1	1	0	1	1	1	1	1
+Oxidative phosphorylation_Complex V (F-type H-transporting ATPase)_atpA (F-type)	0	1	1	1	1	1	1	1	1	1	0	1	1	1	1	1	0	0	1	1	1	0
